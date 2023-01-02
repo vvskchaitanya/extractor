@@ -115,10 +115,10 @@ var app = new Vue({
         for(var i=0;i<this.data.length;i++){
             
             if(worksheet["E"+(i+2)]!=undefined && !this.data[i].vf){
-                worksheet["E"+(i+2)].s = { fill: { fgColor: { rgb: "#db7093" } } };
+                worksheet["E"+(i+2)].s = { fill: {  patternType: "solid", fgColor: { rgb: "db7093" } } };
             }
             if(worksheet["F"+(i+2)]!=undefined && !this.data[i].vt){
-                worksheet["F"+(i+2)].s = { fill: { fgColor: { rgb: "#db7093" } } };
+                worksheet["F"+(i+2)].s = { fill: {  patternType: "solid", fgColor: { rgb: "db7093" } } };
             }
             
         }
